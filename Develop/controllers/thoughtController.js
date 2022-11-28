@@ -18,6 +18,7 @@ module.exports = {
       )
       .catch((err) => res.status(500).json(err));
   },
+
   // Create a thought
   createThought(req, res) {
     Thought.create(req.body)
@@ -52,8 +53,9 @@ module.exports = {
       .then(() => res.json({ message: 'thought and users deleted!' }))
       .catch((err) => res.status(500).json(err));
   },
+
   // Add a reaction to a user
-  this.addReaction(req, res) {
+  addReaction(req, res) {
        Thought.findOneAndUpdate(
       { _id: req.params.thoughtId },
       { $addToSet: { reaction: req.body } },

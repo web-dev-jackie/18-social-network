@@ -1,0 +1,14 @@
+{
+  "name": "Develop",
+  "version": "1.0.0",
+  "decription": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Jacqueline Heatley <heatleyj7@icloud.com> (https://github.com/heatleyj7.git)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "moment": "^2.29.4",
+    "mongoose": "^6.7.2"
+  }
+}
